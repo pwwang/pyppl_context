@@ -3,7 +3,7 @@ import pickle
 from pyppl.plugin import hookimpl
 from pyppl.config import config
 
-__version__ = "0.0.1"
+__version__ = "0.0.2"
 
 config.config.context_callback = None
 config.config.context_callfront = None
