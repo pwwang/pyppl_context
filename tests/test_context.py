@@ -3,11 +3,6 @@ from diot import Diot
 from pyppl import config
 import pyppl_context
 
-def test_setup():
-	pyppl_context.setup(config)
-	assert config.config.context_callback is None
-	assert config.config.context_callfront is None
-
 def test_run(tmp_path):
 	proc = Diot(
 		channel = [1,2,3],

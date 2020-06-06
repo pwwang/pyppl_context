@@ -1,15 +1,12 @@
 """Upstream and downstream process reference for PyPPL"""
 import pickle
 from pyppl.plugin import hookimpl
+from pyppl.config import config
 
 __version__ = "0.0.1"
 
-
-@hookimpl
-def setup(config):
-    """Add configurations"""
-    config.config.context_callback = None
-    config.config.context_callfront = None
+config.config.context_callback = None
+config.config.context_callfront = None
 
 
 # we have to make sure that channel can be referred if a process is skipped
